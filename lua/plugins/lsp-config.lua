@@ -10,7 +10,7 @@ return {
         config = function()
             require("mason-lspconfig").setup({
                 -- for list of supporeted lsps, go to mason-lspconfig github
-                ensure_installed = { "lua_ls", "pyright", "clangd" },
+                ensure_installed = { "lua_ls", "pyright", "clangd", "gopls", "html", "htmx"},
             })
         end,
     },
@@ -29,6 +29,18 @@ return {
             })
 
             lspconfig.clangd.setup({
+                capabilities = capabilities,
+            })
+
+            lspconfig.gopls.setup({
+                capabilities = capabilities,
+            })
+
+            lspconfig.html.setup({
+                capabilities = capabilities,
+            })
+
+            lspconfig.htmx.setup({
                 capabilities = capabilities,
             })
 

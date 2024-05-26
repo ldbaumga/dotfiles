@@ -29,3 +29,7 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
+
+--Alias for the go server air
+--alias air = '$(go env GOPATH)/bin/air'
+vim.api.nvim_create_user_command("Air", "$(go env GOPATH)/bin/air", {})
