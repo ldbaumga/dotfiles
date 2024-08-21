@@ -7,7 +7,7 @@ return {
 			configs.setup({
 				auto_installed = true,
                 ensure_installed = {
-                    "vimdoc",
+                    "vimdoc", "markdown", "markdown_inline",
                 },
 				highlight = {
                     enable = true,
