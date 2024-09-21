@@ -1,10 +1,10 @@
 return {
 	{
-        "ellisonleao/gruvbox.nivm",
-		name = "gruvbox",
+        "catppuccin/nvim",
+		name = "catppuccin",
         config = function()
             vim.o.background = "dark"
-			vim.cmd.colorscheme("gruvbox")
+			vim.cmd.colorscheme("catppuccin-frappe")
 
             -- below changes the background for the different highlight groups to none for transparent backgrounds 
             vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
